@@ -1,0 +1,10 @@
+header,
+body,
+#app {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#app {
+  height: 100dvh;
+}
