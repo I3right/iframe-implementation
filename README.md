@@ -14,6 +14,7 @@ A playground for testing **parent ↔ iframe** communication between the **Paren
 ---
 
 ## Architecture
+```
 Parent (http://localhost:5174)                 Child / Iframe (http://localhost:5173)
 ┌───────────────────────────────┐              ┌──────────────────────────────────────┐
 │ Vue app (test-iframe)         │  postMessage │ Vue app (PIS/PC)                     │
@@ -21,6 +22,7 @@ Parent (http://localhost:5174)                 Child / Iframe (http://localhost:
 │ - Listens to message events   │  postMessage │ - Replies with postMessage           │
 │ - Sends messages to iframe    │─────────────▶│                                      │
 └───────────────────────────────┘              └──────────────────────────────────────┘
+```
 
 ---
 
@@ -73,6 +75,7 @@ VITE_REF_ID=ref id value
 
 ## Project Structure
 
+```
 iframe-implement/
 ├─ src/
 │  ├─ components/
@@ -104,6 +107,7 @@ iframe-implement/
 ├─ index.html
 ├─ package.json
 └─ README.md
+```
 
 ---
 ## Troubleshooting
