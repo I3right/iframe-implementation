@@ -11,13 +11,13 @@ const routes = [
   {
     path: PATH_APP_PAGE_LIST,
     alias: "/",
-    name: "ListPage",
+    name: pageIframe.LIST,
     component: PageIframe,
     props: { pageType: pageIframe.LIST },
   },
   {
     path: PATH_APP_PAGE_ADD,
-    name: "AddPage",
+    name: pageIframe.ADD,
     component: PageIframe,
     props: { pageType: pageIframe.ADD },
   },

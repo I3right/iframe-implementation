@@ -5,8 +5,13 @@ import { pageIframe } from "../utils/constant";
 import router from "../routes";
 
 const { isPISIframe } = usePlatform();
-function handleClickButton(page: pageIframe) {
-  router.push({ path: getPageAppURL(page) });
+function handleClickButton(targetPage: pageIframe) {
+  const currentPage = router.currentRoute.value.name;
+  if (currentPage === targetPage) {
+    window.location.reload();
+    return;
+  }
+  router.push({ path: getPageAppURL(targetPage) });
 }
 </script>
 
