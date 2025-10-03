@@ -5,7 +5,7 @@ import Modal from "./Modal.vue";
 import Toast from "./Toast.vue";
 import { useModal } from "../composables/useModal";
 import { useToast } from "../composables/useToast";
-import { SENDER_PC, SENDER_PIS } from "../composables/usePlatform";
+import { SENDER_PC, SENDER_PIS } from "../utils/constant.ts";
 import { createPISHandler } from "../utils/eventPIS.ts";
 import { BASE_IFRAME_URL } from "../utils/constant";
 import { parseEventData } from "../utils/event.ts";

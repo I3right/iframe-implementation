@@ -23,7 +23,7 @@ const props = defineProps<{
 <style scoped>
 .iframe-container {
   width: 100%;
-  background: rgba(250, 128, 114, 0.1);
+  background: #f9fafb;
   padding: 2rem;
 
   iframe {
